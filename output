@@ -1,0 +1,37 @@
+
+
+All arguments passed are as follow:
+one two three four
+Shift by one position
+Value of positional parameter two after shift
+two
+Shift by two positions:
+Value of positional parameter four after two shift
+four
+
+All arguments passed are as follow:
+one two three four
+Shift by one position
+Value of positional parameter two after shift
+two
+Shift by two positions:
+Value of positional parameter four after two shift
+four
+/bin/bash: ./shift_02.sh: Permission denied
+$#:  13
+$@:  1 2 3 4 5 6 7 8 9 10 11 12 13
+$*:  1 2 3 4 5 6 7 8 9 10 11 12 13
+
+$1 $2 $9 $10 are:  1 2 9 10
+
+$#:  12
+$@:  2 3 4 5 6 7 8 9 10 11 12 13
+$*:  2 3 4 5 6 7 8 9 10 11 12 13
+
+$1 $2 $9 are:  2 3 10
+$#:  10
+$@:  4 5 6 7 8 9 10 11 12 13
+$*:  4 5 6 7 8 9 10 11 12 13
+
+$1 $2 $9 are:  4 5 12
+${10}:  13
